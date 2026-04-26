@@ -1,8 +1,8 @@
 @import "mixin";
 
 .ere-mini-search-properties {
-    &-form {
-        display: flex;
-        gap: var(--padding-default );
-    }
+	&-form {
+		display: flex;
+		gap: var(--padding-base);
+	}
 }

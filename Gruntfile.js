@@ -84,6 +84,8 @@ module.exports = function(grunt) {
 
 		// SASS files to process. Resulting CSS files will be minified as well.
 		css_files_compile: {
+			'assets/styles/frontend/ere.css': 'assets/sass/frontend/ere.scss',
+			'assets/styles/frontend/ere-property-featured.css': 'assets/sass/frontend/ere-property-featured.scss',
 			'assets/styles/frontend/ere-mini-search-properties.css': 'assets/sass/frontend/ere-mini-search-properties.scss',
 
 		},

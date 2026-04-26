@@ -1,0 +1,11 @@
+@import "mixin";
+
+.tooltip {
+    background-color: var(--color-theme-white);
+    padding: var(--spacer-8);
+}
+body #container {
+    padding: var(--spacer-48) var(--spacer-24);
+    max-width: var(--theme-width-xl);
+    margin: 0 auto;
+}

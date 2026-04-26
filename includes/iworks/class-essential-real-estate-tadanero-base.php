@@ -112,6 +112,14 @@ class iworks_essential_real_estate_tadanero_base {
 	protected string $includes_directory;
 
 	/**
+	 * Templates directory
+	 *
+	 * @since 1.0.0
+	 * @var string $templates_dir Path to plugin templates directory
+	 */
+	protected string $templates_dir;
+
+	/**
 	 * Debug mode flag
 	 *
 	 * @since 1.0.0
@@ -160,8 +168,9 @@ class iworks_essential_real_estate_tadanero_base {
 		 * directories and urls
 		 */
 		$this->base = __DIR__;
-		$this->dir  = basename( dirname( $this->base, 2 ) );
-		$this->url  = plugins_url( $this->dir );
+		$this->dir  = dirname( $this->base, 2 );
+		$this->url  = plugins_url( basename( $this->dir ) );
+		$this->templates_dir = $this->dir . '/assets/templates/essential-real-estate';
 		/**
 		 * plugin ID
 		 */
@@ -377,5 +386,23 @@ class iworks_essential_real_estate_tadanero_base {
 			'version'   => '2.0.0',
 			'github'    => 'https://github.com/iworks/essential-real-estate-tadanero',
 		);
+	}
+	/**
+	 * Get custom template path
+	 *
+	 * Build the path to custom template files.
+	 *
+	 * @param string $slug Template slug
+	 * @return string|false Custom template path or false if not found
+	 * @since 1.0.0
+	 */
+	protected function get_custom_template_path( $slug) {
+		// Try to find template without name
+		$template_path = $this->templates_dir . '/'. $slug;
+		if ( file_exists( $template_path ) ) {
+			return $template_path;
+		}
+		
+		return false;
 	}
 }
