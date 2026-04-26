@@ -49,14 +49,9 @@ class iworks_essential_real_estate_tadanero extends iworks_essential_real_estate
 		 * WordPress Hooks
 		 */
 		add_action( 'init', array( $this, 'action_init_settings' ) );
-		/**
-		 * post types
-		 */
-		$filename = $this->includes_directory . '/class-iworks-essential-real-estate-tadanero-posttypes.php';
-		if ( is_file( $filename ) ) {
-			include_once $filename;
-			new iworks_wordpress_plugin_posttypes();
-		}
+		add_action( 'plugins_loaded', array( $this, 'action_plugins_loaded' ) );
+		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts' ), 11 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts' ), PHP_INT_MAX );
 		/**
 		 * load github class
 		 */
@@ -141,5 +136,35 @@ class iworks_essential_real_estate_tadanero extends iworks_essential_real_estate
 	 * @todo Implement database table creation if needed.
 	 */
 	private function db_install() {
+	}
+	
+	/**
+	 * Plugins loaded hook.
+	 *
+	 * Handles tasks after all plugins are loaded.
+	 *
+	 * @since 1.0.0
+	 * @return void
+	 */
+	public function action_plugins_loaded() {
+		do_action( 'iworks/essential-real-estate-tadanero/action_plugins_loaded' );
+		$this->check_option_object();
+		if ( $this->options->get_option( 'disable_ere_css' ) ) {
+		}
+	}
+
+	public function action_wp_enqueue_scripts() {
+		if ( $this->options->get_option( 'disable_ere_css' ) ) {
+			foreach (
+				array(
+					'bootstrap',
+					ERE_PLUGIN_PREFIX . 'main',
+				)
+				as $handle
+			) {
+				wp_deregister_style( $handle );
+				wp_dequeue_style( $handle );
+			}
+		}
 	}
 }

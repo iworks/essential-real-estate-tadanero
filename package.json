@@ -1,8 +1,8 @@
 {
     "name": "essential-real-estate-tadanero",
     "title": "Tadanero: Essential Real Estate",
-    "tagline": "Tadanero: Essential Real Estate",
-    "description": "Tadanero: Essential Real Estate",
+    "tagline": "Frontend modifications for Essential Real Estate plugin",
+    "description": "Tadanero: Essential Real Estate extends and modifies the frontend functionality and appearance of the Essential Real Estate plugin (https://wordpress.org/plugins/essential-real-estate/). This plugin provides additional customization options, styling controls, and frontend enhancements to improve the user experience of real estate websites built with Essential Real Estate.",
     "version": "0.0.1",
     "homepage": "http://essential-real-estate-tadanero.iworks.pl/",
     "tags": [
@@ -46,7 +46,16 @@
         "grunt-replace": "^1",
         "grunt-wp-i18n": "^1"
     },
-    "keywords": [],
+    "keywords": [
+        "wordpress",
+        "real-estate",
+        "essential-real-estate",
+        "frontend",
+        "customization",
+        "styling",
+        "properties",
+        "listings"
+    ],
     "repository": {
         "type": "git",
         "url": "git@github.com:iworks/essential-real-estate-tadanero.git",

@@ -4,25 +4,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.0.1\n"
 "Report-Msgid-Bugs-To: http://iworks.pl\n"
-"POT-Creation-Date: 2026-04-23 08:20:00+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
+"POT-Creation-Date: 2026-04-23 08:15:11+00:00\n"
+"PO-Revision-Date: 2026-04-23 10:17+0200\n"
+"Last-Translator: \n"
 "Language-Team: iWorks <support@iworks.pl>\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Country: United States\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: "
-"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
-"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
-"X-Poedit-Basepath: ../\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-Bookmarks: \n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
-"X-Generator: grunt-wp-i18n 1.0.4\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #. Plugin Name of the plugin/theme
 msgid "Tadanero: Essential Real Estate"
@@ -85,6 +84,8 @@ msgid ""
 "Option \"{option_name}\" has been updated. From \"{old_value}\" to "
 "\"{new_value}\"."
 msgstr ""
+"Opcja „{option_name}” została zaktualizowana. Z „{old_value}” na "
+"„{new_value}”."
 
 #: includes/iworks/options/options.php:247
 msgid "No Page Title"
@@ -121,7 +122,7 @@ msgstr ""
 
 #: includes/iworks/options/options.php:2268
 msgid "ZIP code"
-msgstr ""
+msgstr "Kod pocztowy"
 
 #: includes/iworks/options/options.php:2452
 msgid "OFF"
@@ -145,11 +146,11 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "Marcin Pietrzak"
-msgstr ""
+msgstr "Marcin Pietrzak"
 
 #. Author URI of the plugin/theme
 msgid "http://iworks.pl/"
-msgstr ""
+msgstr "http://iworks.pl/"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:108
 msgctxt "link to add new review page on WordPress.org"

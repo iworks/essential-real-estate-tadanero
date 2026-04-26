@@ -120,28 +120,12 @@ function iworks_essential_real_estate_tadanero_options() {
 			'essential-real-estate-tadanero/etc/config/options',
 			array(
 				array(
-					'type'  => 'heading',
-					'label' => __( 'Example Header', 'essential-real-estate-tadanero' ),
-					'since' => '1.0.0',
-				),
-				array(
-					'name'              => 'example_text',
-					'type'              => 'text',
-					'th'                => __( 'Example Text', 'essential-real-estate-tadanero' ),
-					'description'       => __( 'Enter some text.', 'essential-real-estate-tadanero' ),
-					'classes'           => array( 'small-text' ),
-					'sanitize_callback' => 'esc_html',
+					'name'              => 'disable_ere_css',
+					'type'              => 'checkbox',
+					'th'                => __( 'Turn off Essential Real Estate CSS', 'essential-real-estate-tadanero' ),
+					'description'       => __( 'Check this box to disable the default Essential Real Estate plugin CSS styles.', 'essential-real-estate-tadanero' ),
+					'sanitize_callback' => 'rest_sanitize_boolean',
 					'since'             => '1.0.0',
-				),
-				array(
-					'name'              => 'example_textarea',
-					'type'              => 'textarea',
-					'th'                => __( 'Example Textarea', 'essential-real-estate-tadanero' ),
-					'description'       => __( 'Enter some text.', 'essential-real-estate-tadanero' ),
-					'classes'           => array( 'code', 'large-text' ),
-					'sanitize_callback' => 'wp_kses_post',
-					'since'             => '1.0.0',
-					'rows'              => 5,
 				),
 			)
 		),
