@@ -57,6 +57,9 @@ class iworks_essential_real_estate_tadanero_ere_get_template_part extends iworks
 	 * @since 1.0.0
 	 */
 	public function override_template_part( $template, $slug, $name ) {
+
+l($slug);
+
 		// Check if we have a custom template in our plugin
 		$custom_template = $this->get_custom_template_path( $slug );
 		

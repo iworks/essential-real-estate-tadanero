@@ -118,8 +118,6 @@ class iworks_essential_real_estate_tadanero extends iworks_essential_real_estate
 	 */
 	public function action_wp_enqueue_scripts_register() {
 		$file = 'assets/styles/essential-real-estate-tadanero-frontend' . $this->dev . '.css';
-
-		l($this->url . '/' . $file);
 		wp_register_style(
 			'essential-real-estate-tadanero',
 			$this->url . '/' . $file,

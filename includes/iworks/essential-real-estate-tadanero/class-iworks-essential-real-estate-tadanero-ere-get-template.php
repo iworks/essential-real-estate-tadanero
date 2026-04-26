@@ -42,6 +42,28 @@ class iworks_essential_real_estate_tadanero_ere_get_template extends iworks_esse
 		parent::__construct();
 		// Hook into Essential Real Estate template loading
 		add_filter( 'ere_get_template', array( $this, 'override_template' ), 10, 4 );
+		add_filter( 'ere_locate_template', array( $this, 'override_locate_template' ), 10, 3 );
+	}
+
+	/**
+	 * Override locate template
+	 *
+	 * Filter the template path to use custom templates when available.
+	 *
+	 * @param string $template Template path
+	 * @param string $template_name Template name
+	 * @param string $template_path Template path
+	 * @return string Modified template path
+	 * @since 1.0.0
+	 */
+	public function override_locate_template( $template, $template_name, $template_path ) {
+		// Check if we have a custom template in our plugin
+		$custom_template = $this->get_custom_template_path( $template_name );
+		if ( $custom_template && file_exists( $custom_template ) ) {
+			return $custom_template;
+		}
+		
+		return $template;
 	}
 
 	/**

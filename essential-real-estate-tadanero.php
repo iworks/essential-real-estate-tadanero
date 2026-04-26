@@ -1,8 +1,9 @@
 <?php
 /*
-Plugin Name: Tadanero: Essential Real Estate
+Plugin Name: Essential Real Estate - Tadanero
 Text Domain: essential-real-estate-tadanero
 Plugin URI: PLUGIN_URI
+Requires Plugins: essential-real-estate
 Description: PLUGIN_TAGLINE
 Version: PLUGIN_VERSION
 Author: Marcin Pietrzak
