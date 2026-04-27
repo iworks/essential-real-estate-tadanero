@@ -87,6 +87,7 @@ module.exports = function(grunt) {
 			'assets/styles/frontend/ere.css': 'assets/sass/frontend/ere.scss',
 			'assets/styles/frontend/ere-property-featured.css': 'assets/sass/frontend/ere-property-featured.scss',
 			'assets/styles/frontend/ere-mini-search-properties.css': 'assets/sass/frontend/ere-mini-search-properties.scss',
+			'assets/styles/frontend/ere-single-property.css': 'assets/sass/frontend/ere-single-property.scss',
 
 		},
 		css_files_concat: {

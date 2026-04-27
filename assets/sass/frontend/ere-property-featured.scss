@@ -16,6 +16,15 @@
 			background-color: var(--color-theme-white);
 			height: 100%;
 			overflow: hidden;
+
+			.ere__loop-property-info-item,
+			.ere__loop-property-location {
+				display: grid;
+				grid-template-columns: 16px 1fr;
+				gap: var(--spacer-16);
+				align-items: center;
+				margin-top: var(--spacer-16);
+			}
 		}
 
 		&-title {

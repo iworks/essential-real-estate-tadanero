@@ -1,0 +1,37 @@
+@import "mixin";
+
+.tadanero-single-property {
+	display: grid;
+	grid-template-columns: 1fr 300px;
+	gap: var(--spacer-48);
+
+	&-content {
+		min-width: 0;
+	}
+
+	&-sidebar {
+		.ere__contact-agent-info,
+		.ere__single-agent-contact-form,
+		.ere__single-property-info-footer {
+			background-color: var(--color-theme-white);
+			border: 1px solid var(--color-theme-accent);
+			@include radius();
+			padding: var(--spacer-24);
+			margin-bottom: var(--spacer-24);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.property-meta-section {
+		flex-direction: column;
+	}
+
+	.property-gallery-thumbnails {
+		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+	}
+
+	.single-property-title {
+		font-size: var(--font-size-36);
+	}
+}
