@@ -51,3 +51,25 @@ $width_sm: 576;
 	-moz-border-radius: #{$value};
 	border-radius: #{$value};
 }
+
+@mixin border-radius($value: var(--radius-default)) {
+	@include radius($value);
+}
+
+@mixin eret_meta {
+	display: grid;
+	grid-template-columns: 16px 1fr;
+	gap: var(--spacer-16);
+	align-items: center;
+	margin-top: var(--spacer-16);
+}
+
+@mixin transition($pro...) {
+	-webkit-transition: $pro;
+	transition: $pro;
+}
+
+@mixin box-shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
+}

@@ -1,11 +1,35 @@
 @import "mixin";
+@import "ere/main/elements/tabs";
 
 .tooltip {
-    background-color: var(--color-theme-white);
-    padding: var(--spacer-8);
+	background-color: var(--color-theme-white);
+	padding: var(--spacer-8);
 }
+
 body #container {
-    padding: var(--spacer-48) var(--spacer-24);
-    max-width: var(--theme-width-xl);
-    margin: 0 auto;
+	padding: var(--spacer-48) var(--spacer-24);
+	max-width: var(--theme-width-xl);
+	margin: 0 auto;
+}
+
+.property {
+
+	&-area,
+	&-bedrooms,
+	&-bathrooms,
+	&-identity {
+		@include eret_meta;
+	}
+}
+
+.ere__lpi {
+	&-value {
+		font-weight: var(--font-weight-semi-bold);
+	}
+
+	&-content {
+		align-items: center;
+		display: flex;
+		gap: var(--spacer-4);
+	}
 }

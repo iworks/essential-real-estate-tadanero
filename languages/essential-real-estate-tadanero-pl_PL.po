@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.0.1\n"
 "Report-Msgid-Bugs-To: http://iworks.pl\n"
-"POT-Creation-Date: 2026-04-27 08:02:06+00:00\n"
-"PO-Revision-Date: 2026-04-23 10:17+0200\n"
+"POT-Creation-Date: 2026-04-27 16:13:37+00:00\n"
+"PO-Revision-Date: 2026-04-27 18:09+0200\n"
 "Last-Translator: \n"
 "Language-Team: iWorks <support@iworks.pl>\n"
 "Language: pl\n"
@@ -26,85 +26,182 @@ msgstr ""
 #: assets/templates/essential-real-estate/loop/property-rooms.php:14
 msgid "Room"
 msgid_plural "Rooms"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Pokój"
+msgstr[1] "Pokoje"
+msgstr[2] "Pokoi"
 
 #: etc/options.php:58
 msgid "Tadanero: Essential Real Estate"
-msgstr ""
+msgstr "Niezbędnik w handlu nieruchomościami: Tadanero"
 
 #: etc/options.php:125
 msgid "Turn off Essential Real Estate CSS"
-msgstr ""
+msgstr "Wyłącz ładowania CSS wtyczki Niezbędnik w handlu nieruchomościami"
 
 #: etc/options.php:126
 msgid ""
 "Check this box to disable the default Essential Real Estate plugin CSS "
 "styles."
 msgstr ""
+"Zaznacz to pole, aby wyłączyć domyślne style CSS wtyczki Essential Real "
+"Estate."
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:77
-msgid "Additional Information"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:89
 msgid "Monthly Rent"
-msgstr ""
+msgstr "Czynsz"
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:90
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:78
 msgid "Example value: 4200"
-msgstr ""
+msgstr "Przykładowa wartość: 4200"
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:96
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:84
 msgid "Floor Size Postfix"
-msgstr ""
+msgstr "Po powierzchni podłogi"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:85
+msgid "Example value: Sq Ft"
+msgstr "Przykładowa wartość: m2"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:97
-msgid "Example value: Sq Ft"
-msgstr ""
+msgid "Condition"
+msgstr "Stan lokalu"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:98
+msgid "Example value: New/Used"
+msgstr "Przykładowa wartość: nowe/używane"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:104
+msgid "Finishing Standard"
+msgstr "Standard wykończenia"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:105
+msgid "Example value: High/Standard/Low"
+msgstr "Przykładowa wartość: wysoki/standard/niski"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:117
+msgid "Building Type"
+msgstr "Rodzaj budynku"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:118
+msgid "Example value: Apartment/House"
+msgstr "Example value: Apartment/House"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:124
+msgid "Building Material"
+msgstr "Materiał budowlany"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:125
+msgid "Example value: Concrete/Brick"
+msgstr "Przykładowa wartość: beton/cegła"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:137
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:217
+msgid "Form of Ownership"
+msgstr "Forma własności"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:138
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:218
+msgid "Example value: Freehold/Leasehold"
+msgstr "Przykładowa wartość: własność/dzierżawa"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:144
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:224
+msgid "Market Status"
+msgstr "Rynek"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:145
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:225
+msgid "Example value: primary/secondary"
+msgstr "Przykładowa wartość: podstawowy/wtórny"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:157
+msgid "Loudness"
+msgstr "Głośność"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:158
+msgid "Example value: Quiet/Noisy"
+msgstr "Przykładowa wartość: cicho/głośno"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:164
+msgid "Staircase"
+msgstr "Klatka schodowa"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:165
+msgid "Example value: Clean/Old"
+msgstr "Przykładowa wartość: czysta/stara"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:177
+msgid "Kitchen"
+msgstr "Kuchnia"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:178
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:185
+msgid "Example value: Modern/Old"
+msgstr "Przykładowa wartość: nowoczesna/klasyczna"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:184
+msgid "Bathroom"
+msgstr "Łazienka"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:197
+msgid "Windows"
+msgstr "Okna"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:198
+msgid "Example value: PVC/Wood"
+msgstr "Przykładowa wartość: PCV/drewno"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:204
+msgid "Walls"
+msgstr "Ściany"
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:205
+msgid "Example value: Plaster/Brick/Stone"
+msgstr "Przykładowa wartość: gładź/cegła/kamień"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:76
 msgid "Have a question or need help?"
-msgstr ""
+msgstr "Masz pytanie lub potrzebujesz pomocy?"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:82
 msgid "Enjoying this plugin?"
-msgstr ""
+msgstr "Podoba Ci się ta wtyczka?"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:106
 msgid "Help others discover it—share the link with your friends and community!"
-msgstr ""
+msgstr "Pomóż odkryć je innym — udostępnij odnośnik znajomym i społeczności!"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:108
 msgid "Give it a five stars on WordPress.org"
-msgstr ""
+msgstr "Daj pięć gwiazdek na WordPress.org"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:109
 msgid "Link to it so others can easily find it"
-msgstr ""
+msgstr "Podaj odnośnik, aby inni mogli go łatwo znaleźć"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:130
 msgid ""
 "We’re here for you! Send us a message and we’ll get back to you as soon as "
 "possible."
 msgstr ""
+"Jesteśmy tu dla Ciebie! Wyślij nam wiadomość, a skontaktujemy się z Tobą "
+"najszybciej, jak to możliwe."
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:132
 msgid "WordPress Help Forum"
-msgstr ""
+msgstr "Forum pomocy WordPressa"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:209
 msgid "Settings"
-msgstr ""
+msgstr "Ustawienia"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:224
 msgid "Donate"
-msgstr ""
+msgstr "Złóż datek"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:238
 msgid "GitHub"
-msgstr ""
+msgstr "GitHub"
 
 #: includes/iworks/options/includes/class-iworks-options-logger.php:97
 msgid ""
@@ -116,36 +213,36 @@ msgstr ""
 
 #: includes/iworks/options/options.php:247
 msgid "No Page Title"
-msgstr ""
+msgstr "Brak tytułu strony"
 
 #: includes/iworks/options/options.php:423
 msgid "An error occurred while getting the configuration."
-msgstr ""
+msgstr "Wystąpił błąd podczas pobierania konfiguracji."
 
 #: includes/iworks/options/options.php:1002
 #: includes/iworks/options/options.php:2392
 msgid "Select Image"
-msgstr ""
+msgstr "Wybierz obrazek"
 
 #: includes/iworks/options/options.php:1007
 msgid "Delete image"
-msgstr ""
+msgstr "Usuń obrazek"
 
 #: includes/iworks/options/options.php:1115
 msgid "Save Changes"
-msgstr ""
+msgstr "Zapisz zmiany"
 
 #: includes/iworks/options/options.php:2265
 msgid "Country"
-msgstr ""
+msgstr "Kraj"
 
 #: includes/iworks/options/options.php:2266
 msgid "City"
-msgstr ""
+msgstr "Miasto"
 
 #: includes/iworks/options/options.php:2267
 msgid "Street"
-msgstr ""
+msgstr "Ulica"
 
 #: includes/iworks/options/options.php:2268
 msgid "ZIP code"
@@ -153,27 +250,27 @@ msgstr "Kod pocztowy"
 
 #: includes/iworks/options/options.php:2452
 msgid "OFF"
-msgstr ""
+msgstr "OFF"
 
 #: includes/iworks/options/options.php:2453
 msgid "ON"
-msgstr ""
+msgstr "ON"
 
 #: includes/iworks/options/options.php:2518
 msgid "Failed Security Check"
-msgstr ""
+msgstr "Nieudana kontrola bezpieczeństwa"
 
 #. Plugin Name of the plugin/theme
 msgid "Essential Real Estate - Tadanero"
-msgstr ""
+msgstr "Niezbędne nieruchomości - Tadanero"
 
 #. Plugin URI of the plugin/theme
 msgid "PLUGIN_URI"
-msgstr ""
+msgstr "PLUGIN_URI"
 
 #. Description of the plugin/theme
 msgid "PLUGIN_TAGLINE"
-msgstr ""
+msgstr "PLUGIN_TAGLINE"
 
 #. Author of the plugin/theme
 msgid "Marcin Pietrzak"
@@ -189,13 +286,15 @@ msgid ""
 "https://wordpress.org/support/plugin/essential-real-estate-tadanero/reviews/"
 "#new-post"
 msgstr ""
+"https://wordpress.org/support/plugin/essential-real-estate-tadanero/reviews/"
+"#new-post"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:109
 msgctxt "plugin home page on WordPress.org"
 msgid "https://wordpress.org/plugins/essential-real-estate-tadanero/"
-msgstr ""
+msgstr "https://wordpress.org/plugins/essential-real-estate-tadanero/"
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:132
 msgctxt "link to support forum on WordPress.org"
 msgid "https://wordpress.org/support/plugin/essential-real-estate-tadanero/"
-msgstr ""
+msgstr "https://wordpress.org/support/plugin/essential-real-estate-tadanero/"
