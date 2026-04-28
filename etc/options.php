@@ -119,14 +119,6 @@ function iworks_essential_real_estate_tadanero_options() {
 		'options'    => apply_filters(
 			'essential-real-estate-tadanero/etc/config/options',
 			array(
-				array(
-					'name'              => 'disable_ere_css',
-					'type'              => 'checkbox',
-					'th'                => __( 'Turn off Essential Real Estate CSS', 'essential-real-estate-tadanero' ),
-					'description'       => __( 'Check this box to disable the default Essential Real Estate plugin CSS styles.', 'essential-real-estate-tadanero' ),
-					'sanitize_callback' => 'rest_sanitize_boolean',
-					'since'             => '1.0.0',
-				),
 			)
 		),
 

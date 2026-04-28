@@ -2,7 +2,10 @@
 
 .ere-mini-search-properties {
 	&-form {
-		display: flex;
 		gap: var(--padding-base);
+		.keyword {
+			border: 0 !important;
+		}
 	}
+	padding-bottom: var(--spacer-24);
 }

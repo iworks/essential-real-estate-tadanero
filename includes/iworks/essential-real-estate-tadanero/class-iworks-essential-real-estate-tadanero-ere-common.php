@@ -64,6 +64,11 @@ class iworks_essential_real_estate_tadanero_ere_common extends iworks_essential_
 
 		// Add meta box filter
 		add_filter( 'ere_register_meta_boxes_property_main', array( $this, 'ere_register_meta_boxes_property_main_add_fields' ) );
+
+		/**
+		 * Add filter for custom property fields
+		 */
+		add_filter( 'eret_get_property_fields', array( $this, 'eret_get_property_fields' ) );
 	}
 
 	/**
@@ -288,6 +293,68 @@ class iworks_essential_real_estate_tadanero_ere_common extends iworks_essential_
 				),
 			),
 		);
+		return $fields;
+	}
+
+
+	/**
+	 * Filter and add custom property fields to overview
+	 *
+	 * Retrieves custom meta fields for the current property and adds them to the
+	 * property overview array with proper formatting and priority.
+	 *
+	 * @since 1.0.0
+	 * @param array $fields Existing property fields array
+	 * @return array Modified property fields array with custom fields
+	 */
+	public function eret_get_property_fields( $fields ) {
+		$property_id = get_the_ID();
+		$priority     = 140;
+		$field_config = $this->get_fields();
+		$additional_fields = array();
+
+		// Flatten the field configuration to get all sub-fields
+		foreach ( $field_config as $field_group ) {
+			if ( isset( $field_group['fields'] ) && is_array( $field_group['fields'] ) ) {
+				foreach ( $field_group['fields'] as $sub_field ) {
+					$additional_fields[] = $sub_field;
+				}
+			}
+		}
+
+		// Process each additional field
+		foreach ( $additional_fields as $field ) {
+			$property_field        = get_post_meta( $property_id, $field['id'], true );
+			$property_field_content = $property_field;
+
+			// Handle checkbox_list field type
+			if ( 'checkbox_list' === $field['type'] ) {
+				$property_field_content = '';
+				if ( is_array( $property_field ) ) {
+					foreach ( $property_field as $value => $v ) {
+						$property_field_content .= $v . ', ';
+					}
+					$property_field_content = rtrim( $property_field_content, ', ' );
+				}
+			}
+
+			// Handle textarea field type
+			if ( 'textarea' === $field['type'] ) {
+				$property_field_content = wpautop( $property_field_content );
+			}
+
+			// Add field to overview if it has content
+			if ( ! empty( $property_field_content ) ) {
+				$fields[ $field['id'] ] = array(
+					'title'    => $field['title'],
+					'content'  => '<span>' . $property_field_content . '</span>',
+					'priority' => $priority,
+				);
+			}
+
+			$priority += 10;
+		}
+
 		return $fields;
 	}
 }

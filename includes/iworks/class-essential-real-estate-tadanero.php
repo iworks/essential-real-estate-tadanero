@@ -51,9 +51,7 @@ class iworks_essential_real_estate_tadanero extends iworks_essential_real_estate
 		add_action( 'init', array( $this, 'action_init_settings' ) );
 		add_action( 'plugins_loaded', array( $this, 'action_plugins_loaded' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts_register' ), 0 );
-		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts_enqueue' ), 0 );
-		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts_remove_ere_assets' ), 11 );
-		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts_remove_ere_assets' ), PHP_INT_MAX );
+		add_action( 'wp_enqueue_scripts', array( $this, 'action_wp_enqueue_scripts_enqueue' ), PHP_INT_MAX );
 		/**
 		 * load github class
 		 */
@@ -124,6 +122,13 @@ class iworks_essential_real_estate_tadanero extends iworks_essential_real_estate
 			array(),
 			$this->get_version( $file )
 		);
+		$file = 'assets/scripts/essential-real-estate-tadanero-frontend' . $this->dev . '.js';
+		wp_register_script(
+			'essential-real-estate-tadanero',
+			$this->url . '/' . $file,
+			array(),
+			$this->get_version( $file )
+		);
 	}
 
 	/**
@@ -136,6 +141,7 @@ class iworks_essential_real_estate_tadanero extends iworks_essential_real_estate
 	 */
 	public function action_wp_enqueue_scripts_enqueue() {
 		wp_enqueue_style( 'essential-real-estate-tadanero' );
+		wp_enqueue_script( 'essential-real-estate-tadanero' );
 	}
 
 	/**
@@ -207,26 +213,4 @@ class iworks_essential_real_estate_tadanero extends iworks_essential_real_estate
 		}
 	}
 
-	/**
-	 * Enqueue plugin scripts and styles.
-	 *
-	 * Disables Essential Real Estate CSS and enqueues custom styles.
-	 *
-	 * @since 1.0.0
-	 * @return void
-	 */
-	public function action_wp_enqueue_scripts_remove_ere_assets() {
-		if ( $this->options->get_option( 'disable_ere_css' ) ) {
-			foreach (
-				array(
-					'bootstrap',
-					ERE_PLUGIN_PREFIX . 'main',
-				)
-				as $handle
-			) {
-				wp_deregister_style( $handle );
-				wp_dequeue_style( $handle );
-			}
-		}
-	}
 }

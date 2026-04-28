@@ -44,6 +44,7 @@ class iworks_essential_real_estate_tadanero_ere_single_property extends iworks_e
 		add_action( 'ere_single_property_before_summary', array( $this, 'single_property_before_summary' ), 10 );
 		add_action( 'ere_single_property_after_summary', array( $this, 'single_property_after_summary' ), 10 );
 		add_action( 'ere_single_property_summary', array( $this, 'single_property_summary' ), 54 );
+		add_filter('ere_single_property_overview', array( $this, 'single_property_overview' ));
 	}
 
 	public function single_property_before_summary() {
@@ -59,6 +60,10 @@ class iworks_essential_real_estate_tadanero_ere_single_property extends iworks_e
 	public function single_property_summary() {
 		echo '</div>';
 		echo '<aside class="tadanero-single-property-sidebar">';
+	}
+
+	public function single_property_overview( $overview ) {
+		return apply_filters( 'eret_get_property_fields', $overview );
 	}
 
 }

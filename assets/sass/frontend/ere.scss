@@ -1,10 +1,9 @@
 @import "mixin";
-@import "ere/main/elements/tabs";
 
-.tooltip {
-	background-color: var(--color-theme-white);
-	padding: var(--spacer-8);
+:root {
+	--ere-color-accent: var(--color-theme-accent);
 }
+
 
 body #container {
 	padding: var(--spacer-48) var(--spacer-24);
@@ -12,24 +11,6 @@ body #container {
 	margin: 0 auto;
 }
 
-.property {
-
-	&-area,
-	&-bedrooms,
-	&-bathrooms,
-	&-identity {
-		@include eret_meta;
-	}
-}
-
-.ere__lpi {
-	&-value {
-		font-weight: var(--font-weight-semi-bold);
-	}
-
-	&-content {
-		align-items: center;
-		display: flex;
-		gap: var(--spacer-4);
-	}
+textarea {
+	text-wrap: wrap !important;
 }
