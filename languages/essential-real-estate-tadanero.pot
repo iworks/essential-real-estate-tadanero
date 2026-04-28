@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.0.1\n"
 "Report-Msgid-Bugs-To: http://iworks.pl\n"
-"POT-Creation-Date: 2026-04-27 16:13:56+00:00\n"
+"POT-Creation-Date: 2026-04-28 04:32:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,11 +24,31 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Generator: grunt-wp-i18n 1.0.4\n"
 
+#: assets/templates/essential-real-estate/loop/property-bathrooms.php:14
+msgid "Bathroom"
+msgid_plural "Bathrooms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/templates/essential-real-estate/loop/property-bedrooms.php:14
+msgid "Bedroom"
+msgid_plural "Bedrooms"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/templates/essential-real-estate/loop/property-identity.php:14
+msgid "Property ID"
+msgstr ""
+
 #: assets/templates/essential-real-estate/loop/property-rooms.php:14
 msgid "Room"
 msgid_plural "Rooms"
 msgstr[0] ""
 msgstr[1] ""
+
+#: assets/templates/essential-real-estate/loop/property-size.php:14
+msgid "Size"
+msgstr ""
 
 #: etc/options.php:58
 msgid "Tadanero: Essential Real Estate"
@@ -44,117 +64,116 @@ msgid ""
 "styles."
 msgstr ""
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:77
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:156
 msgid "Monthly Rent"
 msgstr ""
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:78
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:157
 msgid "Example value: 4200"
 msgstr ""
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:84
-msgid "Floor Size Postfix"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:85
-msgid "Example value: Sq Ft"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:97
-msgid "Condition"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:98
-msgid "Example value: New/Used"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:104
-msgid "Finishing Standard"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:105
-msgid "Example value: High/Standard/Low"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:117
-msgid "Building Type"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:118
-msgid "Example value: Apartment/House"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:124
-msgid "Building Material"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:125
-msgid "Example value: Concrete/Brick"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:137
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:217
-msgid "Form of Ownership"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:138
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:218
-msgid "Example value: Freehold/Leasehold"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:144
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:224
-msgid "Market Status"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:145
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:225
-msgid "Example value: primary/secondary"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:157
-msgid "Loudness"
-msgstr ""
-
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:158
-msgid "Example value: Quiet/Noisy"
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:163
+msgid "Other Fees"
 msgstr ""
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:164
-msgid "Staircase"
+msgid "Example value: 500"
 msgstr ""
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:165
-msgid "Example value: Clean/Old"
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:176
+msgid "Condition"
 msgstr ""
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:177
-msgid "Kitchen"
+msgid "Example value: New/Used"
 msgstr ""
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:178
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:185
-msgid "Example value: Modern/Old"
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:183
+msgid "Finishing Standard"
 msgstr ""
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:184
-msgid "Bathroom"
+msgid "Example value: high/standard/low"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:196
+msgid "Building Type"
 msgstr ""
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:197
-msgid "Windows"
+msgid "Example value: apartment/house"
 msgstr ""
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:198
-msgid "Example value: PVC/Wood"
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:203
+msgid "Building Material"
 msgstr ""
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:204
+msgid "Example value: concrete/brick"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:216
+msgid "Form of Ownership"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:217
+msgid "Example value: freehold/leasehold"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:223
+msgid "Market Status"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:224
+msgid "Example value: primary/secondary"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:236
+msgid "Loudness"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:237
+msgid "Example value: quiet/noisy"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:243
+msgid "Staircase"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:244
+msgid "Example value: clean/old"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:256
+msgid "Windows"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:257
+msgid "Example value: PVC/wood"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:263
 msgid "Walls"
 msgstr ""
 
-#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:205
-msgid "Example value: Plaster/Brick/Stone"
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:264
+msgid "Example value: plaster/brick/stone"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:276
+msgid "Balcony Type"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:277
+msgid "Example value: none/wooden/carpet/tiles"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:283
+msgid "Available From"
+msgstr ""
+
+#: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-ere-common.php:284
+msgid "Example value: 2025-01-01"
 msgstr ""
 
 #: includes/iworks/essential-real-estate-tadanero/class-iworks-essential-real-estate-tadanero-wp-admin.php:76
