@@ -14,3 +14,46 @@ body #container {
 textarea {
 	text-wrap: wrap !important;
 }
+
+.btn {
+	&.btn {
+		&-primary {
+	background: linear-gradient(90deg, var(--color-theme-accent) 0%, var(--color-theme-accent) 100%);
+	border-color: var(--button-border-color-hover);
+	color: var(--button-color-hover);
+
+	&:visited {
+		color: var(--button-color-hover);
+	}
+
+	&:hover {
+		background: var(--color-theme-primary);
+		border-color: var(--color-theme-primary);
+		color: var(--color-theme-white);
+	}
+
+	&:focus,
+	&:focus-visible,
+	&:focus-within {
+		background: linear-gradient(0deg, var(--color-theme-primary-20) 0%, var(--color-theme-primary-20) 100%), var(--color-theme-accent);
+		border-color: var(--color-theme-accent-20);
+		color: var(--color-theme-white);
+		box-shadow: 0 0 0 5px var(--colot-theme-fill-02);
+	}
+
+	&:active {
+		background: linear-gradient(0deg, var(--color-theme-primary-50) 0%, var(--color-theme-primary-50) 100%), var(--color-theme-accent);
+		border-color: var(--button-border-color-active);
+		color: var(--color-theme-white);
+		box-shadow: 0 0 0 5px var(--color-theme-accent-20);
+	}
+
+	&:disabled {
+		background-color: var(--button-background-disabled);
+		border-color: var(--button-border-color-disabled);
+		color: var(--button-color-disabled);
+		cursor: not-allowed;
+	}
+		}
+	}
+}

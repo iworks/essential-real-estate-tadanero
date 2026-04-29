@@ -277,6 +277,26 @@ class iworks_essential_real_estate_tadanero_ere_common extends iworks_essential_
 				'col' => 6,
 				'fields' => array(
 					array(
+						'id'      => ERE_METABOX_PREFIX . 'floor_type',
+						'title'   => __( 'Floor Type', 'essential-real-estate-tadanero' ),
+						'desc'    => __( 'Example value: wood/tiles', 'essential-real-estate-tadanero' ),
+						'type'    => 'text',
+						'default' => '',
+					),
+					array(
+						'id'      => ERE_METABOX_PREFIX . 'height',
+						'title'   => __( 'Height', 'essential-real-estate-tadanero' ),
+						'desc'    => __( 'Example value: 250', 'essential-real-estate-tadanero' ),
+						'type'    => 'text',
+						'default' => '',
+					),
+				),
+			),
+			array(
+				'type' => 'row',
+				'col' => 6,
+				'fields' => array(
+					array(
 						'id'      => ERE_METABOX_PREFIX . 'balcony_type',
 						'title'   => __( 'Balcony Type', 'essential-real-estate-tadanero' ),
 						'desc'    => __( 'Example value: none/wooden/carpet/tiles', 'essential-real-estate-tadanero' ),
@@ -287,6 +307,59 @@ class iworks_essential_real_estate_tadanero_ere_common extends iworks_essential_
 						'id'      => ERE_METABOX_PREFIX . 'available_from',
 						'title'   => __( 'Available From', 'essential-real-estate-tadanero' ),
 						'desc'    => __( 'Example value: 2025-01-01', 'essential-real-estate-tadanero' ),
+						'type'    => 'text',
+						'default' => '',
+					),
+				),
+			),
+			array(
+				'type' => 'row',
+				'col' => 6,
+				'fields' => array(
+					array(
+						'id'      => ERE_METABOX_PREFIX . 'kitchen_type',
+						'title'   => __( 'Kitchen', 'essential-real-estate-tadanero' ),
+						'desc'    => __( 'Example value: modern/classic', 'essential-real-estate-tadanero' ),
+						'type'    => 'text',
+						'default' => '',
+					),
+					array(
+						'id'      => ERE_METABOX_PREFIX . 'bathroom_type',
+						'title'   => __( 'Bathroom', 'essential-real-estate-tadanero' ),
+						'desc'    => __( 'Example value: modern/classic', 'essential-real-estate-tadanero' ),
+						'type'    => 'text',
+						'default' => '',
+					),
+				),
+			),
+			array(
+				'type' => 'row',
+				'col' => 6,
+				'fields' => array(
+					array(
+						'id'      => ERE_METABOX_PREFIX . 'heating_source',
+						'title'   => __( 'Heating Source', 'essential-real-estate-tadanero' ),
+						'desc'    => __( 'Example value: heatpump/gas/electric', 'essential-real-estate-tadanero' ),
+						'type'    => 'text',
+						'default' => '',
+					),
+					array(
+						'id'      => ERE_METABOX_PREFIX . 'heating_system',
+						'title'   => __( 'Heating System', 'essential-real-estate-tadanero' ),
+						'desc'    => __( 'Example value: central/individual', 'essential-real-estate-tadanero' ),
+						'type'    => 'text',
+						'default' => '',
+					),
+				),
+			),
+			array(
+				'type' => 'row',
+				'col' => 6,
+				'fields' => array(
+					array(
+						'id'      => ERE_METABOX_PREFIX . 'parking_type',
+						'title'   => __( 'Parking Type', 'essential-real-estate-tadanero' ),
+						'desc'    => __( 'Example value: garage/carport', 'essential-real-estate-tadanero' ),
 						'type'    => 'text',
 						'default' => '',
 					),

@@ -19,5 +19,19 @@
 			padding: var(--spacer-24);
 			margin-bottom: var(--spacer-24);
 		}
+		.ere__contact-agent-info {
+			.ere__agent {
+				&-name {
+					margin-top: var(--spacer-16);
+				}
+				&-name,
+				&-position {
+					text-align: center;
+				}
+			}
+			.ere__single-agent-social {
+				text-align: center;
+			}
+		}
 	}
 }
