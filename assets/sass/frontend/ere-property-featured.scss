@@ -1,1 +1,10 @@
 @import "mixin";
+
+.property {
+	&-image {
+		img {
+			aspect-ratio: 24/18;
+			object-fit: cover;
+		}
+	}
+}
